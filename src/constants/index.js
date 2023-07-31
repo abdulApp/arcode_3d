@@ -44,6 +44,21 @@ export const navLinks = [
   },
 ];
 
+export const navLinksAR = [
+  {
+    id: "about",
+    title: "معلومات تهمك",
+  },
+  {
+    id: "work",
+    title: "أعمالي",
+  },
+  {
+    id: "contact",
+    title: "تواصل معي",
+  },
+];
+
 const services = [
   {
     title: "Web Developer",
@@ -59,6 +74,25 @@ const services = [
   },
   {
     title: "Databases Developer",
+    icon: creator,
+  },
+];
+
+const servicesAR = [
+  {
+    title: "مطور برامج الويب",
+    icon: web,
+  },
+  {
+    title: "مطور برامج الجوال",
+    icon: mobile,
+  },
+  {
+    title: "مطور الواجهة الخلفية",
+    icon: backend,
+  },
+  {
+    title: "مطور قواعد بيانات",
     icon: creator,
   },
 ];
@@ -158,7 +192,7 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "IDV",
     icon: idv,
     iconBg: "#CB6AFF",
     date: "Aug 2022 - Present",
@@ -170,6 +204,60 @@ const experiences = [
     ],
   },
 ];
+
+const experiencesAR = [
+  {
+    title: "مطور برامج",
+    company_name: `Statefarm "فترة تدريب"`,
+    icon: statefarm,
+    iconBg: "#fff",
+    date: "أغسطس  2020 - مايو 2021",
+    points: [
+      "بناء وتطوير نظام الشارات باستخدام React.js والتقنيات الأخرى ذات الصلة.",
+      "التعاون مع فرق متعددة الوظائف بما في ذلك المصممين ومديري المنتجات والمطورين الآخرين لإنشاء منتجات عالية الجودة.",
+      "تنفيذ تصميم سريع الاستجابة وضمان التوافق عبر المستعرضات.",
+      "المشاركة في مراجعات الكود وتقديم ملاحظات بناءة للمطورين الآخرين.",
+    ],
+  },
+  {
+    title: "فني تكنولوجيات المعلومات",
+    company_name: "Solex",
+    icon: solex,
+    iconBg: "#E6DEDD",
+    date: "أكتوبر 2021 - فبراير 2022",
+    points: [
+      "تصميم الحلول التقنية وتطويرها وتنفيذها لمواجهة تحديات الأعمال وتحسين الكفاءة.",
+      "تثبيت وتهيئة الأجهزة والبرامج وأنظمة الشبكات ، والتأكد من أنها آمنة ومتوافقة مع البنية التحتية الحالية.",
+      "إجراء الصيانة والتحديثات الدورية لضمان الأداء الأمثل والأمان لأنظمة تكنولوجيا المعلومات.",
+    ],
+  },
+  {
+    title: "مطور ويب",
+    company_name: "شركة الرواد للمحاماة",
+    icon: alrowadlaw,
+    iconBg: "#0a080a",
+    date: "يونيو 2022 - يوليو 2022",
+    points: [
+      "تطوير وتصميم موقع الويب باستخدام HTML و CSS والتقنيات الأخرى ذات الصلة.",
+      "تنفيذ تصميم سريع الاستجابة وضمان التوافق عبر المستعرضات.",
+      "المشاركة في مراجعات الكود وتقديم ملاحظات بناءة للمطورين الآخرين.",
+    ],
+  },
+  {
+    title: "مطور ويب شامل",
+    company_name: "IDV",
+    icon: idv,
+    iconBg: "#CB6AFF",
+    date: "أغسطس 2022",
+    points: [
+      "تطوير تطبيقات الويب وصيانتها باستخدام React.js والتقنيات الأخرى ذات الصلة.",
+      "التعاون مع فرق متعددة الوظائف بما في ذلك المصممين ومديري المنتجات والمطورين الآخرين لإنشاء منتجات عالية الجودة.",
+      "تنفيذ تصميم سريع الاستجابة وضمان التوافق عبر المستعرضات.",
+      "المشاركة في مراجعات الكود وتقديم ملاحظات بناءة للمطورين الآخرين.",
+    ],
+  },
+];
+
 
 const testimonials = [
   {
@@ -264,4 +352,70 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const projectsAR = [
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+];
+
+export { services, servicesAR, technologies, experiences, experiencesAR, testimonials, projects, projectsAR };

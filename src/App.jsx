@@ -12,6 +12,7 @@ import {
 } from "./components";
 import Home from "./page/Home";
 import GptAi from "./GPT AI/GptAi";
+import ArHome from "./page/ArHome";
 // import "./index.css";
 
 const App = () => {
@@ -22,6 +23,12 @@ const App = () => {
           path="/"
           element={
             <Home />
+          }
+        />
+        <Route
+          path="/arhome"
+          element={
+            <ArHome />
           }
         />
 

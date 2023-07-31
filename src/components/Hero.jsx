@@ -23,13 +23,13 @@ const Hero = () => {
               Welcome, I<span className="text-[#ff8625]">'</span>m <span className="text-[#05BDD6]">Abdul</span><span className="text-[#ff8625]">Rahman</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              Software engineer, develop 3D visuals, user <br className="sm:hidden block" />{" "}
+              Software engineer, user <br className="sm:hidden block" />{" "}
               interfaces, full stack web and mobile applications
             </p>
           </div>
         </div>
         <br/>
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
 
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
           <a href="#about">

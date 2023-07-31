@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close, arcode } from "../assets";
 
 const Navbar = () => {
-  //
-  const [t, i18n] = useTranslation();
-  //
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -47,10 +43,6 @@ const Navbar = () => {
             alt="logo"
             className="w-[100px] h-[100px] object-contain"
           />
-          <strong>{t("title")}</strong>
-          {/* <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Adrian <span className="sm:block hidden">| Adrian</span>
-          </p> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
@@ -65,24 +57,11 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <button
-              onClick={() => {
-                i18n.changeLanguage("ar");
-              }}
-            >
-              ع
-            </button>
-            {" "}
-            {" "}
-            <button
-              onClick={() => {
-                i18n.changeLanguage("en");
-              }}
-            >
-              E
-            </button>
+            <Link to='/arhome'>عربي</Link>
           </li>
         </ul>
+
+        
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -112,6 +91,9 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <Link to='/arhome'>عربي</Link>
+              </li>
             </ul>
           </div>
         </div>
