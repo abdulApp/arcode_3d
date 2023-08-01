@@ -36,12 +36,12 @@ const Hero = () => {
               </p>
               <br />
               <div className="flex">
-                <button className="border rounded-lg bg-[#ff8625] m-2 p-2 cursor-pointer text-[#15c2ee] border-[#15c2ee] text-lg hover:bg-[#15c2ee] hover:text-[#ff8625] hover:border-[#ff8625]">
-                  CV
+                <button className="border rounded-lg m-2 p-2 cursor-pointer font-bold text-[#15c2ee] border-[#15c2ee] text-lg hover:bg-[#15c2ee] hover:text-black hover:border-black">
+                  السيرة الذاتية
                 </button>
                   <a href="#contact">
-                    <div className="border rounded-lg bg-[#15c2ee] m-2 p-2 cursor-pointer text-[#ff8625] border-[#ff8625] text-lg hover:bg-[#ff8625] hover:text-[#15c2ee] hover:border-[#15c2e2]">
-                        Contact Me
+                    <div className="border rounded-lg m-2 p-2 cursor-pointer font-bold text-[#ff8625] border-[#ff8625] text-lg hover:bg-[#ff8625] hover:text-black hover:border-black">
+                        تواصل معي
                     </div>
                   </a>
               </div>
@@ -49,7 +49,7 @@ const Hero = () => {
           </div>
         </div>
         <br />
-        <div className="w-screen h-screen relative">
+        <div className="w-screen h-screen">
           <img
             src={arcode}
             className="f w-1/2 absolute top-[49%] right-[25%]"
@@ -57,7 +57,7 @@ const Hero = () => {
           />
         </div>
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-          <a href="#about">
+          <a href="#about" alt="About me">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
               <motion.dev
                 animate={{
