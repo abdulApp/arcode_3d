@@ -20,16 +20,16 @@ const Home = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
-          {/* <StarsCanvas /> */}
+          <StarsCanvas />
         </div>
         <About />
         <Experience />
-        {/* <Tech /> */}
+        <Tech />
         <Works />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          {/* <StarsCanvas /> */}
+          <StarsCanvas />
         </div>
       </div>
     </div>

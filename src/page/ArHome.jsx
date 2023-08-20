@@ -6,7 +6,6 @@ import {
   Feedbacks,
   Hero,
   Navbar,
-  //   Tech,
   Works,
   StarsCanvas,
 } from "../components/arabic";
@@ -27,7 +26,7 @@ const ArHome = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
