@@ -39,11 +39,12 @@ const Hero = () => {
                 <button className="border rounded-lg bg-[#ff8625] m-2 p-2 cursor-pointer text-[#15c2ee] border-[#15c2ee] text-lg hover:bg-[#15c2ee] hover:text-[#ff8625] hover:border-[#ff8625]">
                   CV
                 </button>
-                  <a href="#contact">
-                    <div className="border rounded-lg bg-[#15c2ee] m-2 p-2 cursor-pointer text-[#ff8625] border-[#ff8625] text-lg hover:bg-[#ff8625] hover:text-[#15c2ee] hover:border-[#15c2e2]">
-                        Contact Me
-                    </div>
-                  </a>
+                <a href="#contact">
+                  <div className="border rounded-lg bg-[#15c2ee] m-2 p-2 cursor-pointer text-[#ff8625] border-[#ff8625] text-lg hover:bg-[#ff8625] hover:text-[#15c2ee] hover:border-[#15c2e2]">
+                    Contact Me
+                  </div>
+                </a>
+                
               </div>
             </div>
           </div>

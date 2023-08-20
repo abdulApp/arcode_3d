@@ -560,10 +560,6 @@ video {
   top: 49%;
 }
 
-.top-\[55\%\] {
-  top: 55%;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -1348,10 +1344,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:top-\[55\%\] {
-    top: 55%;
-  }
-
   .sm\:flex {
     display: flex;
   }
