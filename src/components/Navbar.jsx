@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/"
+          to="/en"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -57,7 +57,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Link to='/arhome'>عربي</Link>
+            <Link to='/'>عربي</Link>
           </li>
         </ul>
 

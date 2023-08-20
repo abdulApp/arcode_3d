@@ -57,9 +57,9 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <li>
-            <Link to='/'>English</Link>
-          </li>
+          {/* <li>
+            <Link to='/en'>English</Link>
+          </li> */}
         </ul>
 
         

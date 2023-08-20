@@ -1,18 +1,15 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
-import { ComputersCanvas } from "../canvas";
 import { arcode } from "../../assets";
+import CV from "../../assets/CV/cv.pdf";
 
 const Hero = () => {
   return (
     <>
       <section className={`relative w-full h-screen mx-auto`} dir="rtl">
         <div className="flex flex-row sm:flex-col">
-          <div
-            className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
-            // dir="rtl"
-          >
+          <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
             <div className="flex flex-col justify-center items-center mt-5">
               <div className="flex flex-col justify-center items-center mt-5">
                 <div className="w-5 h-5 rounded-full bg-[#48A9A6]" />
@@ -36,14 +33,14 @@ const Hero = () => {
               </p>
               <br />
               <div className="flex">
-                <button className="border rounded-lg m-2 p-2 cursor-pointer font-bold text-[#15c2ee] border-[#15c2ee] text-lg hover:bg-[#15c2ee] hover:text-black hover:border-black">
+                <a href={CV} target='_blank' className="border rounded-lg m-2 p-2 cursor-pointer font-bold text-[#15c2ee] border-[#15c2ee] text-lg hover:bg-[#15c2ee] hover:text-black hover:border-black">
                   السيرة الذاتية
-                </button>
-                  <a href="#contact">
-                    <div className="border rounded-lg m-2 p-2 cursor-pointer font-bold text-[#ff8625] border-[#ff8625] text-lg hover:bg-[#ff8625] hover:text-black hover:border-black">
-                        تواصل معي
-                    </div>
-                  </a>
+                </a>
+                <a href="#contact">
+                  <div className="border rounded-lg m-2 p-2 cursor-pointer font-bold text-[#ff8625] border-[#ff8625] text-lg hover:bg-[#ff8625] hover:text-black hover:border-black">
+                    تواصل معي
+                  </div>
+                </a>
               </div>
             </div>
           </div>
