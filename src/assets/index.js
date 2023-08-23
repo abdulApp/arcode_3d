@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import arcode from "./arcode.png"
+import arcode from "./arcode.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -24,17 +24,18 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import idv from './company/idv.png'
-import alrowadlaw from "./company/alrowadlaw.jpg"
+import idv from "./company/idv.png";
+import alrowadlaw from "./company/alrowadlaw.jpg";
 import starbucks from "./company/starbucks.png";
-import statefarm from './company/statefarm.png';
-import solex from './company/solex.png';
+import statefarm from "./company/statefarm.png";
+import solex from "./company/solex.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import arcodehub from "./arcodehub.png"
+import arcodehub from "./arcodehub.png";
+import gymWeb from './gymScreenShot.PNG'
 
 export {
   logo,
