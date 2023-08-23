@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
 import { github } from "../../assets";
+import { worldweb } from "../../assets";
 import { SectionWrapper } from "../../hoc";
 import { projectsAR } from "../../constants";
 import { fadeIn, textVariant } from "../../utils/motion";
@@ -15,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  web_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -43,6 +45,18 @@ const ProjectCard = ({
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
+              
+            </div>
+            <div
+              onClick={() => window.open(web_link, "_blank")}
+              className="black-gradient mx-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={worldweb}
+                alt="source code"
+                className="w-1/2 h-1/2 object-contain"
+              />
+              
             </div>
           </div>
         </div>

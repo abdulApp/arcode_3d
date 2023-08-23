@@ -29,6 +29,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  gymWeb,
 } from "../assets";
 
 export const navLinks = [
@@ -374,29 +375,31 @@ const projectsAR = [
       },
     ],
     image: arcodehub,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/abdulApp/arcode_hub.git",
+    web_link: "https://arcodehub.vercel.app/"
   },
-  // {
-  //   name: "Job IT",
-  //   description:
-  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "restapi",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: jobit,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "النادي الرياضي",
+    description:
+      "موقع ويب سريع الاستجابة لجميع الاجهزه مصمم للصالات الرياضية و اللياقة البدنية, بوضع فيديو في الخلفية واضافة بعض الالوان على الجانبين كنوع من التصميم الجذاب. ايضا اضافة قايمة روابط مخفية تظهر من الجانب الايمن بضغط زر القايمة ",
+    tags: [
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "text-yellow-400",
+      },
+      {
+        name: "html",
+        color: "text-orange-600",
+      },
+    ],
+    image: gymWeb,
+    source_code_link: "https://github.com/abdulApp/gym-temlper.git",
+    web_link: "https://gym-temlper-6v3utqv4n-abdulrahmanamoudi24-gmailcom.vercel.app/"
+  },
   // {
   //   name: "Trip Guide",
   //   description:
