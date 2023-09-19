@@ -6,6 +6,9 @@ import { styles } from "../../styles";
 import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
+import { RiTwitterXFill } from "react-icons/ri";
+import { PiGithubLogo } from "react-icons/pi";
+import { RiLinkedinFill } from "react-icons/ri";
 // import { Globeee } from "../../desktop_pc/Globeee"
 
 const Contact = () => {
@@ -67,69 +70,87 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden" dir="rtl">
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+    <>
+      <div
+        className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden"
+        dir="rtl"
       >
-        <p className={styles.sectionSubText}>ابقى على تواصل</p>
-        <h3 className={styles.sectionHeadText}>راسلني</h3>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">الاسم</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="عبدالرحمن"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">البريد الالكتروني</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="name@exapmle.com"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">رسالتك</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder=""
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
+          <p className={styles.sectionSubText}>ابقى على تواصل</p>
+          <h3 className={styles.sectionHeadText}>راسلني</h3>
 
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mt-12 flex flex-col gap-8"
           >
-            {loading ? "ارسال..." : "ارسال"}
-          </button>
-        </form>
-      </motion.div>
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">الاسم</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="عبدالرحمن"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">
+                البريد الالكتروني
+              </span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="name@exapmle.com"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">رسالتك</span>
+              <textarea
+                rows={7}
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder=""
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              />
+            </label>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
-    </div>
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            >
+              {loading ? "ارسال..." : "ارسال"}
+            </button>
+          </form>
+        </motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      </div>
+      <div className=" flex justify-between items-end h-[10vh] w-[10vw] mx-auto">
+        <span className=" border p-0.5 rounded-lg h-[35px] w-[35px] flex justify-center items-center bg-[#312777]">
+          <RiTwitterXFill />
+        </span>
+        <span className=" border p-0.5 rounded-lg h-[35px] w-[35px] flex justify-center items-center bg-[#312777]">
+          <PiGithubLogo />
+        </span>
+        <span className=" border p-0.5 rounded-lg h-[35px] w-[35px] flex justify-center items-center bg-[#312777]">
+          <RiLinkedinFill />
+        </span>
+      </div>
+    </>
   );
 };
 
